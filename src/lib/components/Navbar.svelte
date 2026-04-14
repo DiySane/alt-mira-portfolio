@@ -1,28 +1,18 @@
-<nav class="navbar">
-  <div class="logo">LOGO</div>
-
-  <ul>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#services">SERVICES</a></li>
-    <li><a href="#works">WORKS</a></li>
-  </ul>
+<nav>
+  <a href="#about">ABOUT</a>
+  <a href="#services">SERVICES</a>
+  <a href="#works">WORKS</a>
 </nav>
 
 <style>
-  .navbar {
+  nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
+    padding: 20px 80px;
     display: flex;
-    justify-content: space-between;
-    padding: 25px 80px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  a {
-    color: var(--text);
-    text-decoration: none;
+    gap: 40px;
+    background: white;
   }
 
   a:hover {

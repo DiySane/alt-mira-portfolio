@@ -1,10 +1,8 @@
 :root {
   --bg: #ffffff;
-  --text: #111111;
-  --muted: #666666;
-
+  --text: #111;
+  --muted: #666;
   --primary: #2563eb;
-  --accent: #f59e0b;
   --border: #e5e5e5;
 }
 
@@ -15,27 +13,64 @@ body {
   color: var(--text);
 }
 
-/* container */
+/* layout */
 .container {
   max-width: 1100px;
-  margin-left: 80px;
+  margin: 0 20px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-left: 80px;
+  }
 }
 
 /* sections */
 section {
-  padding: 140px 0;
+  padding: 120px 0;
 }
 
-/* headings */
+/* typography */
 h1 {
   font-size: 64px;
   font-weight: 800;
   letter-spacing: 4px;
-  margin-bottom: 60px;
-  color: var(--text);
+  background: linear-gradient(to right, #111, var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* subtle text */
-p {
-  color: var(--muted);
+/* reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* responsive grids */
+.services {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.items {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
