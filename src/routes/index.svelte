@@ -1,1 +1,0 @@
-<div>Svelte Kit Success!</div>
