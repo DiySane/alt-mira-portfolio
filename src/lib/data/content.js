@@ -1,3 +1,9 @@
+export const services = [
+  "Logo Design",
+  "Brand Identity",
+  "Social Media Design",
+];
+
 export const works = [
   {
     slug: "brand-identity",
