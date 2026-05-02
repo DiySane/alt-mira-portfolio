@@ -1,5 +1,5 @@
 // import adapter from "@sveltejs/adapter-auto";
-import type { Config } from "@sveltejs/adapter-vercel";
+import Config from "@sveltejs/adapter-vercel";
 
 // export default {
 //   kit: {
@@ -7,6 +7,8 @@ import type { Config } from "@sveltejs/adapter-vercel";
 //   },
 // };
 
-export const config: Config = {
+const config = {
   split: true,
 };
+
+export default config;
