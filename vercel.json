@@ -1,3 +1,4 @@
 {
-    "outputDirectory": ".svelte-kit"
+    "outputDirectory": ".svelte-kit",
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
